@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="這是示範HTML標籤使用的頁面">
+    <title>HTML 標籤範例</title>
+    <style>
+        /* 基本樣式 */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+
+        main {
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* 高亮標註 */
+        .highlight {
+            background-color: yellow;
+            padding: 0 5px;
+            border-radius: 4px;
+        }
+
+        /* 表格樣式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table caption {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        /* 按鈕樣式 */
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        /* 表單樣式 */
+        form label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        form input, form textarea, form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        form input[type="checkbox"] {
+            width: auto;
+        }
+
+        /* 文字與行內元素樣式 */
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f1f1f1;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+
+        footer nav ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        footer nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        footer nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* 音頻與視頻樣式 */
+        audio, video {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        /* 響應式設計 */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            table th, table td {
+                padding: 8px;
+            }
+
+            button {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>歡迎來到 HTML 標籤範例頁面</h1>
+    <p>這裡展示了各種 HTML 標籤的使用方法。</p>
+</header>
+
+<main>
+    <section>
+        <h2>文本格式化</h2>
+        <p>這是一段 <strong>加粗</strong> 文字，這是 <em>斜體</em> 文字，還有 <u>下劃線</u> 文字。</p>
+        <p>這段文字使用了 <mark class="highlight">高亮顯示</mark>。</p>
+        <p>這是 <sub>下標</sub> 和 <sup>上標</sup> 範例。</p>
+    </section>
+
+    <section>
+        <h2>列表</h2>
+        <ul>
+            <li>無序列表項目 1</li>
+            <li>無序列表項目 2</li>
+            <li>無序列表項目 3</li>
+        </ul>
+        <ol>
+            <li>有序列表項目 1</li>
+            <li>有序列表項目 2</li>
+            <li>有序列表項目 3</li>
+        </ol>
+        <dl>
+            <dt>定義項目 1</dt>
+            <dd>這是定義項目 1 的描述。</dd>
+            <dt>定義項目 2</dt>
+            <dd>這是定義項目 2 的描述。</dd>
+        </dl>
+    </section>
+
+    <section>
+        <h2>表格</h2>
+        <table border="1">
+            <caption>學生成績表</caption>
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>數學</th>
+                    <th>英語</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>小明</td>
+                    <td>85</td>
+                    <td>92</td>
+                </tr>
+                <tr>
+                    <td>小華</td>
+                    <td>78</td>
+                    <td>88</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">總分</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section>
+        <h2>圖片和多媒體</h2>
+        <img src="https://c.files.bbci.co.uk/0A51/production/_96414620_cae017cf-f26f-45bf-9f8e-26d60b13f502.jpg" alt="示例圖片">
+        <p>這是圖片上方的描述文字。</p>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            你的瀏覽器不支持音頻元素。
+        </audio>
+        <video controls width="320" height="240">
+            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+            你的瀏覽器不支持視頻元素。
+        </video>
+    </section>
+
+    <section>
+        <h2>表單</h2>
+        <form action="/submit" method="post">
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">電子郵件：</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="comment">留言：</label>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+
+            <label for="newsletter">訂閱電子報：</label>
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes"><br><br>
+
+            <label for="country">國家：</label>
+            <select id="country" name="country">
+                <option value="TW">台灣</option>
+                <option value="CN">中國</option>
+                <option value="US">美國</option>
+            </select><br><br>
+
+            <button type="submit">提交</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>區塊和內嵌內容</h2>
+        <div>
+            <h3>這是區塊級元素</h3>
+            <p>使用 <code>div</code> 來組織網頁內容。</p>
+        </div>
+        <span>這是行內元素，用來處理小範圍內容。</span>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 HTML 標籤範例。所有權利保留。</p>
+    <nav>
+        <ul>
+            <li><a href="#section1">第一節</a></li>
+            <li><a href="#section2">第二節</a></li>
+            <li><a href="#section3">第三節</a></li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+</html>
